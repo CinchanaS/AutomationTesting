@@ -10,7 +10,7 @@ public class MyFirstAutomationScript {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\HP\\Selenium Extracted Files\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
-		driver.get("https://adactinhotelapp.com");
+		driver.navigate().to("https://adactinhotelapp.com");
 		driver.findElement(By.id("username")).sendKeys("cinchanas");
 		driver.findElement(By.id("password")).sendKeys("adactin");
 		driver.findElement(By.id("login")).click();
