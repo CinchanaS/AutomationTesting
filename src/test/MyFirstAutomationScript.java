@@ -10,7 +10,7 @@ public class MyFirstAutomationScript {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\HP\\Selenium Extracted Files\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
-		driver.get("https://adactinhotelapp.com");
+		driver.navigate().to("https://adactinhotelapp.com");
 		driver.findElement(By.id("username")).sendKeys("cinchanas");
 		driver.findElement(By.id("password")).sendKeys("adactin");
 		driver.findElement(By.id("login")).click();
@@ -18,6 +18,9 @@ public class MyFirstAutomationScript {
 		String actualTitle= driver.getTitle();
 		if(actualTitle.equalsIgnoreCase("Adactin.com - Search Hotel")) {
 			System.out.println("Test case passed");
+		}
+		else {
+			System.out.println("Test case failed");
 		}
 	}
 
