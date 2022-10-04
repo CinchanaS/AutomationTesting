@@ -19,6 +19,9 @@ public class MyFirstAutomationScript {
 		if(actualTitle.equalsIgnoreCase("Adactin.com - Search Hotel")) {
 			System.out.println("Test case passed");
 		}
+		else {
+			System.out.println("Test case failed");
+		}
 	}
 
 }
